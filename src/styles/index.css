@@ -1,5 +1,18 @@
 @import 'tailwindcss';
 
+@font-face {
+  font-family: 'New Icon Script';
+  src: url('../assets/fonts/New-Icon-Script-Exfont1157.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --font-script: 'New Icon Script', cursive;
+  --font-display: 'Cinzel', serif;
+}
+
 :root {
   color-scheme: light dark;
   font-synthesis: none;

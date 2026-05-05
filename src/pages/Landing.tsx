@@ -27,7 +27,7 @@ export function Landing() {
 
 function Envelope() {
   return (
-    <div className="relative aspect-4/3 w-[min(90vw,640px)] overflow-hidden bg-[#3f0002] shadow-2xl">
+    <div className="relative aspect-4/3 w-[min(90vw,640px)] overflow-hidden bg-[#370002] shadow-2xl">
       <Grain />
       <Stamps />
       <Postmark />

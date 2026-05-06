@@ -23,7 +23,7 @@ export function Landing() {
           <FloralTopLeft />
           <FloralBottomRight />
         </span>
-        <span className="font-display text-lg font-medium tracking-[0.3em] text-black uppercase sm:text-2xl">
+        <span className="animate-rise font-display text-lg font-medium tracking-[0.3em] text-black uppercase [animation-delay:1.7s] sm:text-2xl">
           Click to open...
         </span>
       </button>
@@ -33,7 +33,7 @@ export function Landing() {
 
 function Envelope() {
   return (
-    <div className="relative aspect-1938/1343 w-[min(72vw,460px)] overflow-hidden shadow-2xl sm:w-[min(85vw,460px)]">
+    <div className="relative aspect-1938/1343 w-[min(72vw,460px)] animate-rise overflow-hidden shadow-2xl [animation-delay:0.3s] sm:w-[min(85vw,460px)]">
       <img
         src={envelopeBg}
         alt=""
@@ -41,7 +41,7 @@ function Envelope() {
         className="absolute inset-0 h-full w-full object-cover"
       />
       <Stamps />
-      <p className="absolute inset-0 flex translate-y-4 -rotate-4 flex-col items-center justify-center font-script text-2xl leading-tight text-[#f2f1eb] sm:translate-y-6 sm:text-3xl md:text-4xl">
+      <p className="absolute inset-0 flex translate-y-4 -rotate-4 animate-fade-in flex-col items-center justify-center font-script text-2xl leading-tight text-[#f2f1eb] [animation-delay:1.2s] sm:translate-y-6 sm:text-3xl md:text-4xl">
         <span>The wedding of</span>
         <span className="mt-1">Syafiqah &amp; Amad!</span>
       </p>
@@ -51,7 +51,7 @@ function Envelope() {
 
 function Stamps() {
   return (
-    <div className="absolute top-3 right-3 flex items-center gap-1 sm:top-4 sm:right-4 sm:gap-2">
+    <div className="absolute top-3 right-3 flex animate-fade-in items-center gap-1 [animation-delay:1s] sm:top-4 sm:right-4 sm:gap-2">
       <img src={leftStamp} alt="" aria-hidden className="h-12 w-auto sm:h-21" />
       <img
         src={rightStamp}
@@ -69,7 +69,7 @@ function FloralTopLeft() {
       src={topLeftFlower}
       alt=""
       aria-hidden
-      className="pointer-events-none absolute top-0 left-0 w-24 -translate-x-1/2 -translate-y-1/2 sm:w-32 md:w-37.5"
+      className="pointer-events-none absolute top-0 left-0 w-24 -translate-x-1/2 -translate-y-1/2 animate-fade-in [animation-duration:1.2s] sm:w-32 md:w-37.5"
     />
   );
 }
@@ -80,7 +80,7 @@ function FloralBottomRight() {
       src={bottomRightFlower}
       alt=""
       aria-hidden
-      className="pointer-events-none absolute right-0 bottom-0 w-24 translate-x-1/2 translate-y-1/2 sm:w-32 md:w-37.5"
+      className="pointer-events-none absolute right-0 bottom-0 w-24 translate-x-1/2 translate-y-1/2 animate-rise [animation-delay:1.1s] sm:w-32 md:w-37.5"
     />
   );
 }

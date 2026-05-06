@@ -5,6 +5,7 @@ import bouquet3 from '../assets/images/invitation/bouquet-3.png';
 import bouquet4 from '../assets/images/invitation/bouquet-4.png';
 import bouquet5 from '../assets/images/invitation/bouquet-5.png';
 import bouquet6 from '../assets/images/invitation/bouquet-6.png';
+import polaroid1 from '../assets/images/invitation/polaroid-1.png';
 import polaroid2 from '../assets/images/invitation/polaroid-2.png';
 
 export function Invitation() {
@@ -16,6 +17,13 @@ export function Invitation() {
           alt=""
           aria-hidden
           className="aspect-1048/1346 w-full object-contain"
+        />
+
+        <img
+          src={polaroid1}
+          alt=""
+          aria-hidden
+          className="pointer-events-none absolute -top-36 left-[45%] w-28 rotate-6 sm:w-40 md:w-54"
         />
 
         <Bouquet
@@ -47,7 +55,7 @@ export function Invitation() {
           src={polaroid2}
           alt=""
           aria-hidden
-          className="pointer-events-none absolute -top-16 left-[5%] w-28 -rotate-6 sm:w-40 md:w-56"
+          className="pointer-events-none absolute -top-16 left-[5%] w-28 -rotate-6 sm:w-40 md:w-54"
         />
       </div>
     </main>

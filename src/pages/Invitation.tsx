@@ -39,7 +39,7 @@ export function Invitation() {
         />
         <Bouquet
           src={bouquet6}
-          className="bottom-0 -left-6 w-24 sm:w-32 md:w-37.5"
+          className="bottom-0 -left-10 w-28 translate-y-1/4 sm:w-36 md:w-42"
         />
       </div>
     </main>

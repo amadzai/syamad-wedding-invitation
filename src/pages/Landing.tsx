@@ -33,7 +33,7 @@ export function Landing() {
 
 function Envelope() {
   return (
-    <div className="relative aspect-1938/1343 w-[min(72vw,460px)] animate-rise overflow-hidden shadow-2xl [animation-delay:0.25s] sm:w-[min(85vw,460px)]">
+    <div className="relative aspect-1938/1343 w-[min(72vw,460px)] animate-rise overflow-hidden shadow-2xl [animation-delay:0.2s] sm:w-[min(85vw,460px)]">
       <img
         src={envelopeBg}
         alt=""
@@ -41,7 +41,7 @@ function Envelope() {
         className="absolute inset-0 h-full w-full object-cover"
       />
       <Stamps />
-      <p className="absolute inset-0 flex translate-y-4 -rotate-4 animate-fade-in flex-col items-center justify-center font-script text-2xl leading-tight text-[#f2f1eb] [animation-delay:0.75s] sm:translate-y-6 sm:text-3xl md:text-4xl">
+      <p className="absolute inset-0 flex translate-y-4 -rotate-4 animate-fade-in flex-col items-center justify-center font-script text-2xl leading-tight text-[#f2f1eb] [animation-delay:0.6s] sm:translate-y-6 sm:text-3xl md:text-4xl">
         <span>The wedding of</span>
         <span className="mt-1">Syafiqah &amp; Amad!</span>
       </p>
@@ -51,7 +51,7 @@ function Envelope() {
 
 function Stamps() {
   return (
-    <div className="absolute top-3 right-3 flex animate-fade-in items-center gap-1 [animation-delay:0.6s] sm:top-4 sm:right-4 sm:gap-2">
+    <div className="absolute top-3 right-3 flex animate-fade-in items-center gap-1 [animation-delay:0.45s] sm:top-4 sm:right-4 sm:gap-2">
       <img src={stamp1} alt="" aria-hidden className="h-12 w-auto sm:h-21" />
       <img
         src={stamp2}
@@ -69,7 +69,7 @@ function FloralTopLeft() {
       aria-hidden
       className="pointer-events-none absolute top-0 left-0 -translate-x-1/2 -translate-y-1/2"
     >
-      <span className="block animate-rise">
+      <span className="block animate-rise-blur">
         <img src={bouquet1} alt="" className="w-24 sm:w-32 md:w-37.5" />
       </span>
     </span>
@@ -82,7 +82,7 @@ function FloralBottomRight() {
       aria-hidden
       className="pointer-events-none absolute right-0 bottom-0 translate-x-1/2 translate-y-1/2"
     >
-      <span className="block animate-rise [animation-delay:0.7s]">
+      <span className="block animate-rise-blur [animation-delay:0.55s]">
         <img src={bouquet2} alt="" className="w-24 sm:w-32 md:w-37.5" />
       </span>
     </span>

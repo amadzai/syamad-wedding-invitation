@@ -11,8 +11,9 @@
 @theme {
   --font-script: 'New Icon Script', cursive;
   --font-display: 'Cinzel', serif;
-  --animate-rise: rise 0.35s ease-out both;
-  --animate-fade-in: fade-in 0.25s ease-out both;
+  --animate-rise: rise 0.25s ease-out both;
+  --animate-rise-blur: rise-blur 0.4s ease-out both;
+  --animate-fade-in: fade-in 0.2s ease-out both;
 }
 
 @keyframes rise {
@@ -27,13 +28,29 @@
   }
 }
 
-@keyframes fade-in {
+@keyframes rise-blur {
   from {
     opacity: 0;
+    transform: translateY(40px);
+    filter: blur(6px);
   }
 
   to {
     opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    filter: blur(6px);
+  }
+
+  to {
+    opacity: 1;
+    filter: blur(0);
   }
 }
 

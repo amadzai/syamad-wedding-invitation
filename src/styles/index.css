@@ -11,8 +11,8 @@
 @theme {
   --font-script: 'New Icon Script', cursive;
   --font-display: 'Cinzel', serif;
-  --animate-rise: rise 0.7s ease-out both;
-  --animate-fade-in: fade-in 0.5s ease-out both;
+  --animate-rise: rise 0.5s ease-out both;
+  --animate-fade-in: fade-in 0.35s ease-out both;
 }
 
 @keyframes rise {

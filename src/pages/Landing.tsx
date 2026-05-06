@@ -2,6 +2,8 @@ import { useNavigate } from 'react-router-dom';
 import topLeftFlower from '../assets/images/top-left-flower.png';
 import bottomRightFlower from '../assets/images/bottom-right-flower.png';
 import envelopeBg from '../assets/images/envelope-background.png';
+import leftStamp from '../assets/images/left-stamp.png';
+import rightStamp from '../assets/images/right-stamp.png';
 
 export function Landing() {
   const navigate = useNavigate();
@@ -38,7 +40,6 @@ function Envelope() {
         className="absolute inset-0 h-full w-full object-cover"
       />
       <Stamps />
-      <Postmark />
       <p className="absolute inset-0 flex translate-y-6 -rotate-4 flex-col items-center justify-center font-script text-4xl leading-tight text-[#f2f1eb] sm:text-2xl md:text-4xl">
         <span>The wedding of</span>
         <span className="mt-1">Syafiqah &amp; Amad!</span>
@@ -49,16 +50,20 @@ function Envelope() {
 
 function Stamps() {
   return (
-    <div className="absolute top-4 right-6 flex gap-1">
-      <div className="h-12 w-10 border border-[#e8c9a8]/60 bg-[#7a2533] sm:h-14 sm:w-12" />
-      <div className="h-12 w-10 border border-[#e8c9a8]/60 bg-[#7a2533] sm:h-14 sm:w-12" />
+    <div className="absolute top-4 right-4 flex items-center gap-2">
+      <img
+        src={leftStamp}
+        alt=""
+        aria-hidden
+        className="h-16 w-auto sm:h-21"
+      />
+      <img
+        src={rightStamp}
+        alt=""
+        aria-hidden
+        className="h-16 w-12 sm:h-21 sm:w-16.25"
+      />
     </div>
-  );
-}
-
-function Postmark() {
-  return (
-    <div className="absolute top-4 right-6 h-16 w-24 rounded-full border border-[#e8c9a8]/40 sm:h-20 sm:w-28" />
   );
 }
 

@@ -11,21 +11,22 @@ export function Landing() {
   const open = () => navigate('/invitation');
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center gap-10 bg-white px-6 py-12">
+    <main className="flex min-h-screen items-center justify-center bg-white px-6 py-12">
       <button
         type="button"
         onClick={open}
         aria-label="Open invitation"
-        className="group relative cursor-pointer transition-transform duration-300 hover:scale-[1.02] focus-visible:scale-[1.02] focus-visible:outline-none"
+        className="group flex cursor-pointer flex-col items-center gap-10 transition-transform duration-300 hover:scale-[1.02] focus-visible:scale-[1.02] focus-visible:outline-none"
       >
-        <Envelope />
-        <FloralTopLeft />
-        <FloralBottomRight />
+        <span className="relative">
+          <Envelope />
+          <FloralTopLeft />
+          <FloralBottomRight />
+        </span>
+        <span className="font-display text-lg font-medium tracking-[0.3em] text-black uppercase sm:text-2xl">
+          Click to open...
+        </span>
       </button>
-
-      <p className="font-display text-lg font-medium tracking-[0.3em] text-black uppercase sm:text-2xl">
-        Click to open...
-      </p>
     </main>
   );
 }

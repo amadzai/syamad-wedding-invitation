@@ -23,7 +23,7 @@ export function Invitation() {
         />
         <Bouquet
           src={bouquet1}
-          className="top-[8%] left-[10%] w-24 sm:w-32 md:w-37.5"
+          className="top-[20%] left-[3%] w-12 sm:w-16 md:w-20"
         />
         <Bouquet
           src={bouquet3}

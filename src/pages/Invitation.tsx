@@ -8,7 +8,7 @@ import bouquet6 from '../assets/images/invitation/bouquet-6.png';
 
 export function Invitation() {
   return (
-    <main className="flex min-h-screen flex-col items-center bg-white px-6 pt-40 pb-12 sm:pt-48">
+    <main className="flex min-h-screen flex-col items-center bg-white px-6 pt-48 pb-12 sm:pt-56">
       <div className="relative w-[min(72vw,460px)] sm:w-[min(85vw,460px)]">
         <img
           src={envelope}
@@ -27,7 +27,7 @@ export function Invitation() {
         />
         <Bouquet
           src={bouquet3}
-          className="-top-2 right-[15%] w-24 sm:w-32 md:w-37.5"
+          className="top-[8%] right-[15%] w-20 sm:w-24 md:w-28"
         />
         <Bouquet
           src={bouquet4}

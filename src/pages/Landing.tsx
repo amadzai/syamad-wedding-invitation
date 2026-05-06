@@ -1,4 +1,6 @@
 import { useNavigate } from 'react-router-dom';
+import topLeftFlower from '../assets/images/top-left-flower.png';
+import bottomRightFlower from '../assets/images/bottom-right-flower.png';
 
 export function Landing() {
   const navigate = useNavigate();
@@ -68,12 +70,22 @@ function Postmark() {
 
 function FloralTopLeft() {
   return (
-    <div className="pointer-events-none absolute -top-8 -left-8 h-32 w-32 rounded-full bg-linear-to-br from-[#6b3a4a]/40 to-transparent blur-sm sm:h-40 sm:w-40" />
+    <img
+      src={topLeftFlower}
+      alt=""
+      aria-hidden
+      className="pointer-events-none absolute top-0 left-0 w-37.5 -translate-x-1/2 -translate-y-1/2"
+    />
   );
 }
 
 function FloralBottomRight() {
   return (
-    <div className="pointer-events-none absolute -right-8 -bottom-8 h-32 w-32 rounded-full bg-linear-to-tl from-[#6b3a4a]/40 to-transparent blur-sm sm:h-40 sm:w-40" />
+    <img
+      src={bottomRightFlower}
+      alt=""
+      aria-hidden
+      className="pointer-events-none absolute right-0 bottom-0 w-37.5 translate-x-1/2 translate-y-1/2"
+    />
   );
 }

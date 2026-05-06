@@ -27,11 +27,11 @@ export function Landing() {
 
 function Envelope() {
   return (
-    <div className="relative aspect-4/3 w-[min(90vw,640px)] overflow-hidden bg-[#370002] shadow-2xl">
+    <div className="relative aspect-4/3 w-[min(85vw,460px)] overflow-hidden bg-[#370002] shadow-2xl">
       <Grain />
       <Stamps />
       <Postmark />
-      <p className="absolute inset-0 flex flex-col items-center justify-center font-script text-4xl leading-tight text-[#f2f1eb] sm:text-2xl md:text-5xl">
+      <p className="absolute inset-0 flex translate-y-6 -rotate-4 flex-col items-center justify-center font-script text-4xl leading-tight text-[#f2f1eb] sm:text-2xl md:text-4xl">
         <span>The wedding of</span>
         <span className="mt-1">Syafiqah &amp; Amad!</span>
       </p>

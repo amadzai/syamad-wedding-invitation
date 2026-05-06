@@ -1,9 +1,9 @@
 import { useNavigate } from 'react-router-dom';
-import topLeftFlower from '../assets/images/landing/top-left-flower.png';
-import bottomRightFlower from '../assets/images/landing/bottom-right-flower.png';
+import bouquet1 from '../assets/images/landing/bouquet-1.png';
+import bouquet2 from '../assets/images/landing/bouquet-2.png';
 import envelopeBg from '../assets/images/landing/envelope-background.png';
-import leftStamp from '../assets/images/landing/left-stamp.png';
-import rightStamp from '../assets/images/landing/right-stamp.png';
+import stamp1 from '../assets/images/landing/stamp-1.png';
+import stamp2 from '../assets/images/landing/stamp-2.png';
 
 export function Landing() {
   const navigate = useNavigate();
@@ -52,9 +52,9 @@ function Envelope() {
 function Stamps() {
   return (
     <div className="absolute top-3 right-3 flex animate-fade-in items-center gap-1 [animation-delay:0.9s] sm:top-4 sm:right-4 sm:gap-2">
-      <img src={leftStamp} alt="" aria-hidden className="h-12 w-auto sm:h-21" />
+      <img src={stamp1} alt="" aria-hidden className="h-12 w-auto sm:h-21" />
       <img
-        src={rightStamp}
+        src={stamp2}
         alt=""
         aria-hidden
         className="h-12 w-9 sm:h-21 sm:w-16.25"
@@ -70,7 +70,7 @@ function FloralTopLeft() {
       className="pointer-events-none absolute top-0 left-0 -translate-x-1/2 -translate-y-1/2"
     >
       <span className="block animate-rise">
-        <img src={topLeftFlower} alt="" className="w-24 sm:w-32 md:w-37.5" />
+        <img src={bouquet1} alt="" className="w-24 sm:w-32 md:w-37.5" />
       </span>
     </span>
   );
@@ -83,11 +83,7 @@ function FloralBottomRight() {
       className="pointer-events-none absolute right-0 bottom-0 translate-x-1/2 translate-y-1/2"
     >
       <span className="block animate-rise [animation-delay:1s]">
-        <img
-          src={bottomRightFlower}
-          alt=""
-          className="w-24 sm:w-32 md:w-37.5"
-        />
+        <img src={bouquet2} alt="" className="w-24 sm:w-32 md:w-37.5" />
       </span>
     </span>
   );

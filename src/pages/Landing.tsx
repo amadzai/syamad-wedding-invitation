@@ -1,9 +1,9 @@
 import { useNavigate } from 'react-router-dom';
-import topLeftFlower from '../assets/images/top-left-flower.png';
-import bottomRightFlower from '../assets/images/bottom-right-flower.png';
-import envelopeBg from '../assets/images/envelope-background.png';
-import leftStamp from '../assets/images/left-stamp.png';
-import rightStamp from '../assets/images/right-stamp.png';
+import topLeftFlower from '../assets/images/landing/top-left-flower.png';
+import bottomRightFlower from '../assets/images/landing/bottom-right-flower.png';
+import envelopeBg from '../assets/images/landing/envelope-background.png';
+import leftStamp from '../assets/images/landing/left-stamp.png';
+import rightStamp from '../assets/images/landing/right-stamp.png';
 
 export function Landing() {
   const navigate = useNavigate();

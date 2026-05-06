@@ -1,4 +1,4 @@
-import openEnvelope from '../assets/images/open-envelope.png';
+import openEnvelope from '../assets/images/invitation/open-envelope.png';
 
 export function Invitation() {
   return (

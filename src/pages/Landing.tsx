@@ -1,6 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import topLeftFlower from '../assets/images/top-left-flower.png';
 import bottomRightFlower from '../assets/images/bottom-right-flower.png';
+import envelopeBg from '../assets/images/envelope-background.png';
 
 export function Landing() {
   const navigate = useNavigate();
@@ -29,8 +30,13 @@ export function Landing() {
 
 function Envelope() {
   return (
-    <div className="relative aspect-4/3 w-[min(85vw,460px)] overflow-hidden bg-[#370002] shadow-2xl">
-      <Grain />
+    <div className="relative aspect-1938/1343 w-[min(85vw,460px)] overflow-hidden shadow-2xl">
+      <img
+        src={envelopeBg}
+        alt=""
+        aria-hidden
+        className="absolute inset-0 h-full w-full object-cover"
+      />
       <Stamps />
       <Postmark />
       <p className="absolute inset-0 flex translate-y-6 -rotate-4 flex-col items-center justify-center font-script text-4xl leading-tight text-[#f2f1eb] sm:text-2xl md:text-4xl">
@@ -38,18 +44,6 @@ function Envelope() {
         <span className="mt-1">Syafiqah &amp; Amad!</span>
       </p>
     </div>
-  );
-}
-
-function Grain() {
-  return (
-    <div
-      aria-hidden
-      className="pointer-events-none absolute inset-0 opacity-90 mix-blend-overlay"
-      style={{
-        backgroundImage: `url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='320' height='320'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='3' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")`,
-      }}
-    />
   );
 }
 

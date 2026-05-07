@@ -58,6 +58,10 @@ export function Invitation() {
           SYAFIQAH + AMAD
         </p>
 
+        <p className="pointer-events-none absolute top-[31%] left-[57%] -translate-x-1/2 -rotate-4 font-display text-sm font-medium tracking-[0.15em] whitespace-nowrap text-black sm:top-[30%] sm:text-2xl">
+          SAVE OUR DATE
+        </p>
+
         <img
           src={envelopeOpen}
           alt=""
@@ -65,7 +69,10 @@ export function Invitation() {
           className="pointer-events-none absolute bottom-0 left-0 w-full"
         />
 
-        <Bouquet src={bouquet5} className="top-[28%] -right-6 w-24 sm:w-37.5" />
+        <Bouquet
+          src={bouquet5}
+          className="top-[28%] -right-6 w-24 sm:-right-10 sm:w-37.5"
+        />
         <Bouquet
           src={bouquet6}
           className="bottom-0 -left-10 w-28 translate-y-1/4 sm:w-42"

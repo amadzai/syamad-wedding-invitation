@@ -57,7 +57,7 @@ export function Invitation() {
           src={saveTheDate}
           alt=""
           aria-hidden
-          className="pointer-events-none absolute top-[25%] left-1/2 w-48 -translate-x-1/2 -rotate-4 sm:w-72 md:w-95"
+          className="pointer-events-none absolute top-[25%] left-1/2 w-58 -translate-x-1/2 -rotate-4 sm:w-72 md:w-95"
         />
 
         <img

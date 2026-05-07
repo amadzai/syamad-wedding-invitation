@@ -7,6 +7,8 @@ import bouquet5 from '../assets/images/invitation/bouquet-5.png';
 import bouquet6 from '../assets/images/invitation/bouquet-6.png';
 import polaroid1 from '../assets/images/invitation/polaroid-1.png';
 import polaroid2 from '../assets/images/invitation/polaroid-2.png';
+import saveTheDate from '../assets/images/invitation/save-the-date.png';
+import envelopeOpen from '../assets/images/invitation/envelope-open.png';
 
 export function Invitation() {
   return (
@@ -19,6 +21,11 @@ export function Invitation() {
           className="aspect-1048/1346 w-full object-contain"
         />
 
+        <Bouquet
+          src={bouquet2}
+          className="-top-32 left-[10%] w-24 sm:-top-40 sm:w-32 md:w-37.5"
+        />
+
         <img
           src={polaroid1}
           alt=""
@@ -26,10 +33,13 @@ export function Invitation() {
           className="pointer-events-none absolute -top-32 left-[42%] w-34 rotate-6 sm:-top-36 sm:left-[45%] sm:w-40 md:w-54"
         />
 
-        <Bouquet
-          src={bouquet2}
-          className="-top-32 left-[10%] w-24 sm:-top-40 sm:w-32 md:w-37.5"
+        <img
+          src={polaroid2}
+          alt=""
+          aria-hidden
+          className="pointer-events-none absolute -top-16 left-[5%] w-34 -rotate-6 sm:w-40 md:w-54"
         />
+
         <Bouquet
           src={bouquet1}
           className="top-[20%] left-[3%] w-12 sm:w-16 md:w-20"
@@ -42,6 +52,21 @@ export function Invitation() {
           src={bouquet4}
           className="top-[28%] -left-10 w-28 sm:w-36 md:w-42"
         />
+
+        <img
+          src={saveTheDate}
+          alt=""
+          aria-hidden
+          className="pointer-events-none absolute top-[25%] left-1/2 w-48 -translate-x-1/2 -rotate-4 sm:w-72 md:w-95"
+        />
+
+        <img
+          src={envelopeOpen}
+          alt=""
+          aria-hidden
+          className="pointer-events-none absolute bottom-0 left-0 w-full"
+        />
+
         <Bouquet
           src={bouquet5}
           className="top-[28%] -right-6 w-24 sm:w-32 md:w-37.5"
@@ -49,13 +74,6 @@ export function Invitation() {
         <Bouquet
           src={bouquet6}
           className="bottom-0 -left-10 w-28 translate-y-1/4 sm:w-36 md:w-42"
-        />
-
-        <img
-          src={polaroid2}
-          alt=""
-          aria-hidden
-          className="pointer-events-none absolute -top-16 left-[5%] w-34 -rotate-6 sm:w-40 md:w-54"
         />
       </div>
     </main>

@@ -23,41 +23,35 @@ export function Invitation() {
 
         <Bouquet
           src={bouquet2}
-          className="-top-32 left-[10%] w-24 sm:-top-40 sm:w-32 md:w-37.5"
+          className="-top-32 left-[10%] w-24 sm:-top-40 sm:w-37.5"
         />
 
         <img
           src={polaroid1}
           alt=""
           aria-hidden
-          className="pointer-events-none absolute -top-28 left-[42%] w-34 rotate-6 sm:-top-36 sm:left-[45%] sm:w-40 md:w-54"
+          className="pointer-events-none absolute -top-28 left-[42%] w-34 rotate-6 sm:-top-36 sm:left-[45%] sm:w-54"
         />
 
         <img
           src={polaroid2}
           alt=""
           aria-hidden
-          className="pointer-events-none absolute -top-16 left-[5%] w-34 -rotate-6 sm:w-40 md:w-54"
+          className="pointer-events-none absolute -top-16 left-[5%] w-34 -rotate-6 sm:w-54"
         />
 
-        <Bouquet
-          src={bouquet1}
-          className="top-[20%] left-[3%] w-12 sm:w-16 md:w-20"
-        />
+        <Bouquet src={bouquet1} className="top-[20%] left-[3%] w-12 sm:w-20" />
         <Bouquet
           src={bouquet3}
-          className="top-[18%] right-[15%] w-20 sm:w-24 md:w-28"
+          className="top-[18%] right-[15%] w-20 sm:w-28"
         />
-        <Bouquet
-          src={bouquet4}
-          className="top-[28%] -left-10 w-28 sm:w-36 md:w-42"
-        />
+        <Bouquet src={bouquet4} className="top-[28%] -left-10 w-28 sm:w-42" />
 
         <img
           src={saveTheDate}
           alt=""
           aria-hidden
-          className="pointer-events-none absolute top-[25%] left-1/2 w-58 -translate-x-1/2 -rotate-4 sm:w-72 md:w-95"
+          className="pointer-events-none absolute top-[25%] left-1/2 w-58 -translate-x-1/2 -rotate-4 sm:w-95"
         />
 
         <img
@@ -67,13 +61,10 @@ export function Invitation() {
           className="pointer-events-none absolute bottom-0 left-0 w-full"
         />
 
-        <Bouquet
-          src={bouquet5}
-          className="top-[28%] -right-6 w-24 sm:w-32 md:w-37.5"
-        />
+        <Bouquet src={bouquet5} className="top-[28%] -right-6 w-24 sm:w-37.5" />
         <Bouquet
           src={bouquet6}
-          className="bottom-0 -left-10 w-28 translate-y-1/4 sm:w-36 md:w-42"
+          className="bottom-0 -left-10 w-28 translate-y-1/4 sm:w-42"
         />
       </div>
     </main>

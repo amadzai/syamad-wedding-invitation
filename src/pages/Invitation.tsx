@@ -23,7 +23,7 @@ export function Invitation() {
           src={polaroid1}
           alt=""
           aria-hidden
-          className="pointer-events-none absolute -top-36 left-[45%] w-28 rotate-6 sm:w-40 md:w-54"
+          className="pointer-events-none absolute -top-32 left-[42%] w-34 rotate-6 sm:-top-36 sm:left-[45%] sm:w-40 md:w-54"
         />
 
         <Bouquet
@@ -55,7 +55,7 @@ export function Invitation() {
           src={polaroid2}
           alt=""
           aria-hidden
-          className="pointer-events-none absolute -top-16 left-[5%] w-28 -rotate-6 sm:w-40 md:w-54"
+          className="pointer-events-none absolute -top-16 left-[5%] w-34 -rotate-6 sm:w-40 md:w-54"
         />
       </div>
     </main>

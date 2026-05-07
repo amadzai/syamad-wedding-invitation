@@ -30,7 +30,7 @@ export function Invitation() {
           src={polaroid1}
           alt=""
           aria-hidden
-          className="pointer-events-none absolute -top-32 left-[42%] w-34 rotate-6 sm:-top-36 sm:left-[45%] sm:w-40 md:w-54"
+          className="pointer-events-none absolute -top-28 left-[42%] w-34 rotate-6 sm:-top-36 sm:left-[45%] sm:w-40 md:w-54"
         />
 
         <img

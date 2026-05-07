@@ -54,6 +54,10 @@ export function Invitation() {
           className="pointer-events-none absolute top-[25%] left-1/2 w-58 -translate-x-1/2 -rotate-4 sm:w-95"
         />
 
+        <p className="pointer-events-none absolute top-[42%] left-[7%] rotate-86 font-display text-[6px] tracking-[0.3em] text-black sm:top-[42%] sm:left-[3%] sm:text-[10px]">
+          SYAFIQAH + AMAD
+        </p>
+
         <img
           src={envelopeOpen}
           alt=""

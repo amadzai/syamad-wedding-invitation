@@ -62,6 +62,10 @@ export function Invitation() {
           SAVE OUR DATE
         </p>
 
+        <p className="pointer-events-none absolute top-[40%] left-[57%] -translate-x-1/2 -rotate-4 font-display text-3xl tracking-widest whitespace-nowrap text-black sm:top-[42%] sm:text-5xl">
+          30.08.26
+        </p>
+
         <img
           src={envelopeOpen}
           alt=""
@@ -71,7 +75,7 @@ export function Invitation() {
 
         <Bouquet
           src={bouquet5}
-          className="top-[28%] -right-6 w-24 sm:-right-10 sm:w-37.5"
+          className="top-[8%] -right-6 w-24 sm:-right-10 sm:w-37.5"
         />
         <Bouquet
           src={bouquet6}

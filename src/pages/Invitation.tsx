@@ -66,6 +66,10 @@ export function Invitation() {
           30.08.26
         </p>
 
+        <p className="pointer-events-none absolute top-[52%] left-[57%] -translate-x-1/2 -rotate-4 font-script text-base whitespace-nowrap text-black sm:top-[55%] sm:text-2xl">
+          We&rsquo;re getting married!
+        </p>
+
         <img
           src={envelopeOpen}
           alt=""

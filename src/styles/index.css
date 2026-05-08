@@ -8,10 +8,18 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'The Seasons';
+  src: url('../assets/fonts/The-Seasons-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 @theme {
   --font-script: 'New Icon Script', cursive;
   --font-display: 'Cinzel', serif;
-  --font-pushkin: 'Pushkin', serif;
+  --font-seasons: 'The Seasons', serif;
   --animate-rise: rise 0.25s ease-out both;
   --animate-rise-blur: rise-blur 0.4s ease-out both;
   --animate-fade-in: fade-in 0.2s ease-out both;

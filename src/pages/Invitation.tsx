@@ -54,15 +54,15 @@ export function Invitation() {
           className="pointer-events-none absolute top-[25%] left-1/2 w-58 -translate-x-1/2 -rotate-4 sm:w-95"
         />
 
-        <p className="pointer-events-none absolute top-[42%] left-[7%] rotate-86 font-display text-[6px] tracking-[0.3em] text-black sm:top-[42%] sm:left-[3%] sm:text-[10px]">
+        <p className="pointer-events-none absolute top-[42%] left-[7%] rotate-86 font-seasons text-[6px] tracking-[0.3em] text-black sm:top-[42%] sm:left-[3%] sm:text-[10px]">
           SYAFIQAH + AMAD
         </p>
 
-        <p className="pointer-events-none absolute top-[31%] left-[57%] -translate-x-1/2 -rotate-4 font-display text-sm font-medium tracking-[0.15em] whitespace-nowrap text-black sm:top-[30%] sm:text-2xl">
+        <p className="pointer-events-none absolute top-[31%] left-[57%] -translate-x-1/2 -rotate-4 font-seasons text-sm font-medium tracking-[0.15em] whitespace-nowrap text-black sm:top-[30%] sm:text-2xl">
           SAVE OUR DATE
         </p>
 
-        <p className="pointer-events-none absolute top-[40%] left-[57%] -translate-x-1/2 -rotate-4 font-display text-3xl tracking-widest whitespace-nowrap text-black sm:top-[42%] sm:text-5xl">
+        <p className="pointer-events-none absolute top-[40%] left-[57%] -translate-x-1/2 -rotate-4 font-seasons text-3xl tracking-widest whitespace-nowrap text-black sm:top-[42%] sm:text-5xl">
           30.08.26
         </p>
 

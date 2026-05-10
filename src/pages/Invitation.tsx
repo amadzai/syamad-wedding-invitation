@@ -27,55 +27,61 @@ export function Invitation() {
           src={envelope}
           alt=""
           aria-hidden
-          className="aspect-1048/1346 w-full object-contain"
+          className="aspect-1048/1346 w-full animate-rise object-contain [animation-delay:0.58s]"
         />
 
         <Bouquet
           src={bouquet2}
-          className="-top-32 left-[10%] w-24 sm:-top-40 sm:w-37.5"
+          className="-top-32 left-[10%] w-24 animate-rise-blur [animation-delay:0.09s] sm:-top-40 sm:w-37.5"
         />
 
         <img
           src={polaroid1}
           alt=""
           aria-hidden
-          className="pointer-events-none absolute -top-28 left-[42%] w-34 rotate-6 sm:-top-36 sm:left-[45%] sm:w-54"
+          className="pointer-events-none absolute -top-28 left-[42%] w-34 rotate-6 animate-rise [animation-delay:0.17s] sm:-top-36 sm:left-[45%] sm:w-54"
         />
 
         <img
           src={polaroid2}
           alt=""
           aria-hidden
-          className="pointer-events-none absolute -top-16 left-[5%] w-34 -rotate-6 sm:w-54"
+          className="pointer-events-none absolute -top-16 left-[5%] w-34 -rotate-6 animate-rise [animation-delay:0.22s] sm:w-54"
         />
 
-        <Bouquet src={bouquet1} className="top-[20%] left-[3%] w-12 sm:w-20" />
+        <Bouquet
+          src={bouquet1}
+          className="top-[20%] left-[3%] w-12 animate-rise-blur [animation-delay:0.5s] sm:w-20"
+        />
         <Bouquet
           src={bouquet3}
-          className="top-[18%] right-[15%] w-20 sm:w-28"
+          className="top-[18%] right-[15%] w-20 animate-rise-blur [animation-delay:0.53s] sm:w-28"
         />
-        <Bouquet src={bouquet4} className="top-[28%] -left-10 w-28 sm:w-42" />
+        <Bouquet
+          src={bouquet4}
+          className="top-[28%] -left-10 w-28 animate-rise-blur [animation-delay:0.55s] sm:w-42"
+        />
 
         <img
           src={saveTheDate}
           alt=""
           aria-hidden
-          className="pointer-events-none absolute top-[25%] left-1/2 w-58 -translate-x-1/2 -rotate-4 sm:w-95"
+          className="pointer-events-none absolute top-[25%] left-1/2 w-58 -translate-x-1/2 -rotate-4 animate-rise [animation-delay:0.31s] sm:w-95"
         />
 
-        <p className="pointer-events-none absolute top-[41.5%] left-1/2 -translate-x-32 rotate-86 font-seasons text-[6px] tracking-[0.3em] text-black sm:-translate-x-52 sm:text-[10px]">
+        <p className="pointer-events-none absolute top-[41.5%] left-1/2 -translate-x-32 rotate-86 animate-fade-in font-seasons text-[6px] tracking-[0.3em] text-black [animation-delay:0.38s] sm:-translate-x-52 sm:text-[10px]">
           SYAFIQAH + AMAD
         </p>
 
-        <p className="pointer-events-none absolute top-[31%] left-[57%] -translate-x-1/2 -rotate-4 font-seasons text-sm font-medium tracking-widest whitespace-nowrap text-black sm:top-[31%] sm:text-2xl">
+        <p className="pointer-events-none absolute top-[31%] left-[57%] -translate-x-1/2 -rotate-4 animate-fade-in font-seasons text-sm font-medium tracking-widest whitespace-nowrap text-black [animation-delay:0.38s] sm:top-[31%] sm:text-2xl">
           SAVE OUR DATE
         </p>
 
-        <p className="pointer-events-none absolute top-[37%] left-[57%] -translate-x-1/2 -rotate-4 font-seasons text-3xl tracking-widest whitespace-nowrap text-black sm:top-[38%] sm:text-5xl">
+        <p className="pointer-events-none absolute top-[37%] left-[57%] -translate-x-1/2 -rotate-4 animate-fade-in font-seasons text-3xl tracking-widest whitespace-nowrap text-black [animation-delay:0.42s] sm:top-[38%] sm:text-5xl">
           30.08.26
         </p>
 
-        <p className="pointer-events-none absolute top-[47%] left-[57%] -translate-x-1/2 -rotate-4 font-pinyon text-base tracking-wider whitespace-nowrap text-black sm:top-[48%] sm:text-2xl">
+        <p className="pointer-events-none absolute top-[47%] left-[57%] -translate-x-1/2 -rotate-4 animate-fade-in font-pinyon text-base tracking-wider whitespace-nowrap text-black [animation-delay:0.44s] sm:top-[48%] sm:text-2xl">
           We&rsquo;re getting married!
         </p>
 
@@ -83,36 +89,36 @@ export function Invitation() {
           src={envelopeOpen}
           alt=""
           aria-hidden
-          className="pointer-events-none absolute bottom-0 left-0 w-full"
+          className="pointer-events-none absolute bottom-0 left-0 w-full animate-rise [animation-delay:0.58s]"
         />
 
         <Bouquet
           src={bouquet5}
-          className="top-[22%] -right-9 w-24 sm:-right-16 sm:w-37.5"
+          className="top-[22%] -right-9 w-24 animate-rise-blur [animation-delay:0.61s] sm:-right-16 sm:w-37.5"
         />
         <Bouquet
           src={bouquet6}
-          className="-bottom-10 -left-10 w-28 translate-y-1/4 sm:w-48"
+          className="-bottom-10 -left-10 w-28 translate-y-1/4 animate-rise-blur [animation-delay:0.64s] sm:w-48"
         />
       </div>
 
       <img
         src={bismillah}
         alt="Bismillah"
-        className="mt-20 w-78 sm:mt-32 sm:w-94"
+        className="mt-20 w-78 animate-rise-blur sm:mt-32 sm:w-94"
       />
 
-      <p className="text-md mt-4 max-w-md text-center font-script text-black sm:mt-8 sm:text-xl">
+      <p className="text-md mt-4 max-w-md animate-rise-blur text-center font-script text-black sm:mt-8 sm:text-xl">
         With the blessing of Allah we are delighted
         <br />
         to invite you to the wedding reception of
       </p>
 
-      <h1 className="mt-4 text-center font-seasons text-3xl tracking-[0.15em] text-black sm:mt-10 sm:text-4xl">
+      <h1 className="mt-4 animate-rise-blur text-center font-seasons text-3xl tracking-[0.15em] text-black sm:mt-10 sm:text-4xl">
         SYAFIQAH & AMAD
       </h1>
 
-      <p className="mt-3 text-center font-seasons text-2xl tracking-[0.2em] text-black sm:mt-4 sm:text-3xl">
+      <p className="mt-3 animate-rise-blur text-center font-seasons text-2xl tracking-[0.2em] text-black sm:mt-4 sm:text-3xl">
         30<sup>th</sup> AUGUST 2026
       </p>
 
@@ -120,17 +126,17 @@ export function Invitation() {
         src={whiteFlowers}
         alt=""
         aria-hidden
-        className="mt-4 w-48 sm:mt-8 sm:w-60"
+        className="mt-4 w-48 animate-rise-blur sm:mt-8 sm:w-60"
       />
 
       <img
         src={house}
         alt=""
         aria-hidden
-        className="mt-10 w-70 sm:mt-12 sm:w-82"
+        className="mt-10 w-70 animate-rise-blur sm:mt-12 sm:w-82"
       />
 
-      <div className="mt-8 flex flex-col gap-8 sm:mt-10 sm:gap-16">
+      <div className="mt-8 flex animate-rise-blur flex-col gap-8 sm:mt-10 sm:gap-16">
         <Details title="VENUE" detail="Astana, Bamboo Hills" />
         <Details
           title="DATE"
@@ -156,11 +162,11 @@ export function Invitation() {
         />
       </div>
 
-      <p className="mt-12 text-center font-seasons text-3xl font-bold text-burgundy sm:mt-16 sm:text-4xl">
+      <p className="mt-12 animate-rise-blur text-center font-seasons text-3xl font-bold text-burgundy sm:mt-16 sm:text-4xl">
         HOW TO GET THERE
       </p>
 
-      <div className="relative mt-6 h-100 w-full max-w-sm overflow-hidden sm:mt-8 sm:h-125 sm:max-w-xl">
+      <div className="relative mt-6 h-100 w-full max-w-sm animate-rise-blur overflow-hidden sm:mt-8 sm:h-125 sm:max-w-xl">
         <Map
           initialViewState={{
             longitude: 101.67490055966623,
@@ -208,7 +214,7 @@ export function Invitation() {
         </div>
       </div>
 
-      <div className="relative mt-24 w-full max-w-md sm:mt-32">
+      <div className="relative mt-24 w-full max-w-md animate-rise-blur sm:mt-32">
         <a
           href="#"
           className="block rounded-full bg-burgundy px-12 py-3 text-center font-seasons text-xl tracking-widest text-white sm:py-4 sm:text-4xl"
@@ -227,7 +233,7 @@ export function Invitation() {
 
       <Link
         to="/"
-        className="mt-12 font-seasons text-sm tracking-widest text-burgundy underline underline-offset-4 sm:mt-16 sm:text-base"
+        className="mt-12 animate-rise-blur font-seasons text-sm tracking-widest text-burgundy underline underline-offset-4 sm:mt-16 sm:text-base"
       >
         RETURN TO ENVELOPE
       </Link>

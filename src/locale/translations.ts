@@ -63,7 +63,7 @@ export const translations = {
     'details.parking.subtext':
       'Akses tanpa tiket dengan kad TNG / Debit /\nKredit pada kadar tetap RM 5 / sehari',
 
-    'map.heading': 'PETA LOKASI',
+    'map.heading': 'CARA KE LOKASI',
     'map.placeName': 'Astana at Bamboo Hills',
     'map.placeAddress':
       'Unit P13, Bamboo Hills, Off Lebuhraya DUKE, 51200 Kuala Lumpur',

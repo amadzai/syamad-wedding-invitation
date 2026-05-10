@@ -145,7 +145,7 @@ export function Invitation() {
         <Details title="DRESS CODE" detail="Traditional / Formal" />
         <Details
           title="PARKING AT ASTANA"
-          detail={<img src={car} alt="" className="w-56 sm:w-72" />}
+          detail={<img src={car} alt="" className="w-48 sm:w-64" />}
           subtext={
             <>
               Ticketless access with TNG / Debit /

@@ -100,9 +100,13 @@ export function Invitation() {
         to invite you to the wedding reception of
       </p>
 
-      <h1 className="mt-4 text-center font-seasons text-3xl tracking-widest text-black sm:mt-10 sm:text-4xl">
+      <h1 className="mt-4 text-center font-seasons text-3xl tracking-[0.15em] text-black sm:mt-10 sm:text-4xl">
         SYAFIQAH & AMAD
       </h1>
+
+      <p className="mt-3 text-center font-seasons text-2xl tracking-[0.2em] text-black sm:mt-4 sm:text-3xl">
+        30<sup>th</sup> AUGUST 2026
+      </p>
     </main>
   );
 }

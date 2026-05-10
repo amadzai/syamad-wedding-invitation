@@ -123,6 +123,10 @@ export function Invitation() {
         aria-hidden
         className="mt-10 w-70 sm:mt-12 sm:w-82"
       />
+
+      <p className="mt-6 text-center font-seasons text-3xl font-bold text-burgundy sm:mt-10 sm:text-4xl">
+        VENUE
+      </p>
     </main>
   );
 }

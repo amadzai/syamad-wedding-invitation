@@ -173,7 +173,7 @@ export function Invitation() {
           />
         </Map>
 
-        <div className="absolute top-3 left-3 flex max-w-65 items-start gap-3 rounded-md bg-white p-3 shadow-lg">
+        <div className="absolute top-3 left-3 flex max-w-60 items-start gap-1 rounded-md bg-white p-3 shadow-lg">
           <div className="flex-1">
             <p className="font-seasons text-sm font-bold text-black">
               Astana at Bamboo Hills
@@ -182,15 +182,26 @@ export function Invitation() {
               Unit P13, Bamboo Hills, Off Lebuhraya DUKE, 51200 Kuala Lumpur
             </p>
           </div>
-          <a
-            href="https://www.google.com/maps/dir/?api=1&destination=Astana+at+Bamboo+Hills+Kuala+Lumpur"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Get directions"
-            className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-burgundy text-white hover:opacity-90"
-          >
-            →
-          </a>
+          <div className="flex shrink-0 flex-col gap-2">
+            <a
+              href="https://www.google.com/maps/dir/?api=1&destination=Astana+at+Bamboo+Hills+Kuala+Lumpur"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Open in Google Maps"
+              className="flex h-8 w-8 items-center justify-center rounded-full border border-burgundy bg-white text-burgundy transition-colors hover:bg-burgundy hover:text-white"
+            >
+              <i className="fa-solid fa-location-dot text-sm" />
+            </a>
+            <a
+              href="https://www.waze.com/ul?ll=3.1934,101.6749&navigate=yes"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Open in Waze"
+              className="flex h-8 w-8 items-center justify-center rounded-full border border-burgundy bg-white text-burgundy transition-colors hover:bg-burgundy hover:text-white"
+            >
+              <i className="fa-brands fa-waze text-sm" />
+            </a>
+          </div>
         </div>
       </div>
     </main>

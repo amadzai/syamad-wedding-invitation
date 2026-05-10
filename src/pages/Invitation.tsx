@@ -124,7 +124,20 @@ export function Invitation() {
         className="mt-10 w-70 sm:mt-12 sm:w-82"
       />
 
-      <Details title="VENUE" detail="Astana, Bamboo Hills" />
+      <div className="mt-8 flex flex-col gap-8 sm:mt-12 sm:gap-16">
+        <Details title="VENUE" detail="Astana, Bamboo Hills" />
+        <Details
+          title="DATE"
+          detail={
+            <>
+              August 30<sup>th</sup>, 2026
+            </>
+          }
+        />
+        <Details title="TIME" detail="12:00pm - 4:00pm" />
+        <Details title="THEME" detail="Earthy Elegance" />
+        <Details title="DRESS CODE" detail="Traditional / Formal" />
+      </div>
     </main>
   );
 }
@@ -140,16 +153,22 @@ function Bouquet({ src, className }: { src: string; className: string }) {
   );
 }
 
-function Details({ title, detail }: { title: string; detail: string }) {
+function Details({
+  title,
+  detail,
+}: {
+  title: string;
+  detail: React.ReactNode;
+}) {
   return (
-    <>
-      <p className="mt-6 text-center font-seasons text-3xl font-bold text-burgundy sm:mt-10 sm:text-4xl">
+    <div className="flex flex-col items-center">
+      <p className="text-center font-seasons text-3xl font-bold text-burgundy sm:text-4xl">
         {title}
       </p>
 
       <p className="mt-4 text-center font-script text-2xl text-black sm:mt-6 sm:text-3xl">
         {detail}
       </p>
-    </>
+    </div>
   );
 }

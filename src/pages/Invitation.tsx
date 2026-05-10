@@ -54,7 +54,7 @@ export function Invitation() {
           className="pointer-events-none absolute top-[25%] left-1/2 w-58 -translate-x-1/2 -rotate-4 sm:w-95"
         />
 
-        <p className="pointer-events-none absolute top-[42%] left-[8%] rotate-86 font-seasons text-[6px] tracking-[0.3em] text-black sm:top-[42%] sm:left-[4%] sm:text-[10px]">
+        <p className="pointer-events-none absolute top-[41.5%] left-1/2 -translate-x-32 rotate-86 font-seasons text-[6px] tracking-[0.3em] text-black sm:-translate-x-52 sm:text-[10px]">
           SYAFIQAH + AMAD
         </p>
 

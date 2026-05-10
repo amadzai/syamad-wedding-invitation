@@ -9,6 +9,7 @@ import polaroid1 from '../assets/images/invitation/polaroid-1.png';
 import polaroid2 from '../assets/images/invitation/polaroid-2.png';
 import saveTheDate from '../assets/images/invitation/save-the-date.png';
 import envelopeOpen from '../assets/images/invitation/envelope-open.png';
+import bismillah from '../assets/images/invitation/bismillah.png';
 
 export function Invitation() {
   return (
@@ -86,6 +87,12 @@ export function Invitation() {
           className="bottom-0 -left-10 w-28 translate-y-1/4 sm:w-42"
         />
       </div>
+
+      <img
+        src={bismillah}
+        alt="Bismillah"
+        className="mt-20 w-78 sm:mt-32 sm:w-85"
+      />
     </main>
   );
 }

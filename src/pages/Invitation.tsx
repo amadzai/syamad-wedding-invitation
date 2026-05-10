@@ -157,12 +157,12 @@ export function Invitation() {
         HOW TO GET THERE
       </p>
 
-      <div className="relative mt-6 h-100 w-full max-w-xl overflow-hidden sm:mt-8 sm:h-125">
+      <div className="relative mt-6 h-100 w-full max-w-sm overflow-hidden sm:mt-8 sm:h-125 sm:max-w-xl">
         <Map
           initialViewState={{
             longitude: 101.67490055966623,
             latitude: 3.1934055941883077,
-            zoom: 16,
+            zoom: 17,
           }}
           mapStyle="https://tiles.stadiamaps.com/styles/stamen_toner.json"
         >

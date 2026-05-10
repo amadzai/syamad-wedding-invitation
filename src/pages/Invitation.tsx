@@ -18,8 +18,10 @@ import car from '../assets/images/invitation/car-myvi.png';
 import { Map, Marker } from 'react-map-gl/maplibre';
 import 'maplibre-gl/dist/maplibre-gl.css';
 import { Link } from 'react-router-dom';
+import { useLocale } from '../locale/useLocale';
 
 export function Invitation() {
+  const { t } = useLocale();
   return (
     <main className="flex min-h-screen flex-col items-center bg-white px-6 pt-48 pb-12 sm:pt-56">
       <div className="relative w-[min(72vw,460px)] sm:w-[min(85vw,460px)]">
@@ -70,11 +72,11 @@ export function Invitation() {
         />
 
         <p className="pointer-events-none absolute top-[41.5%] left-1/2 -translate-x-32 rotate-86 animate-fade-in font-seasons text-[6px] tracking-[0.3em] text-black [animation-delay:0.38s] sm:-translate-x-52 sm:text-[10px]">
-          SYAFIQAH + AMAD
+          {t('envelope.coupleSmall')}
         </p>
 
         <p className="pointer-events-none absolute top-[31%] left-[57%] -translate-x-1/2 -rotate-4 animate-fade-in font-seasons text-sm font-medium tracking-widest whitespace-nowrap text-black [animation-delay:0.38s] sm:top-[31%] sm:text-2xl">
-          SAVE OUR DATE
+          {t('envelope.saveOurDate')}
         </p>
 
         <p className="pointer-events-none absolute top-[37%] left-[57%] -translate-x-1/2 -rotate-4 animate-fade-in font-seasons text-3xl tracking-widest whitespace-nowrap text-black [animation-delay:0.42s] sm:top-[38%] sm:text-5xl">
@@ -82,7 +84,7 @@ export function Invitation() {
         </p>
 
         <p className="pointer-events-none absolute top-[47%] left-[57%] -translate-x-1/2 -rotate-4 animate-fade-in font-pinyon text-base tracking-wider whitespace-nowrap text-black [animation-delay:0.44s] sm:top-[48%] sm:text-2xl">
-          We&rsquo;re getting married!
+          {t('envelope.gettingMarried')}
         </p>
 
         <img
@@ -108,18 +110,16 @@ export function Invitation() {
         className="mt-20 w-78 animate-rise-blur sm:mt-32 sm:w-94"
       />
 
-      <p className="text-md mt-4 max-w-md animate-rise-blur text-center font-script text-black sm:mt-8 sm:text-xl">
-        With the blessing of Allah we are delighted
-        <br />
-        to invite you to the wedding reception of
+      <p className="text-md mt-4 max-w-md animate-rise-blur text-center font-script whitespace-pre-line text-black sm:mt-8 sm:text-xl">
+        {t('invitation.intro')}
       </p>
 
       <h1 className="mt-4 animate-rise-blur text-center font-seasons text-3xl tracking-[0.15em] text-black sm:mt-10 sm:text-4xl">
-        SYAFIQAH & AMAD
+        {t('invitation.coupleNames')}
       </h1>
 
       <p className="mt-3 animate-rise-blur text-center font-seasons text-2xl tracking-[0.2em] text-black sm:mt-4 sm:text-3xl">
-        30<sup>th</sup> AUGUST 2026
+        {t('invitation.dateLong')}
       </p>
 
       <img
@@ -137,33 +137,39 @@ export function Invitation() {
       />
 
       <div className="mt-8 flex animate-rise-blur flex-col gap-8 sm:mt-10 sm:gap-16">
-        <Details title="VENUE" detail="Astana, Bamboo Hills" />
         <Details
-          title="DATE"
-          detail={
-            <>
-              August 30<sup>th</sup>, 2026
-            </>
-          }
+          title={t('details.venue.title')}
+          detail={t('details.venue.detail')}
         />
-        <Details title="TIME" detail="12:00pm - 4:00pm" />
-        <Details title="THEME" detail="Earthy Elegance" />
-        <Details title="DRESS CODE" detail="Traditional / Formal" />
         <Details
-          title="PARKING AT ASTANA"
+          title={t('details.date.title')}
+          detail={t('details.date.detail')}
+        />
+        <Details
+          title={t('details.time.title')}
+          detail={t('details.time.detail')}
+        />
+        <Details
+          title={t('details.theme.title')}
+          detail={t('details.theme.detail')}
+        />
+        <Details
+          title={t('details.dressCode.title')}
+          detail={t('details.dressCode.detail')}
+        />
+        <Details
+          title={t('details.parking.title')}
           detail={<img src={car} alt="" className="w-48 sm:w-64" />}
           subtext={
-            <>
-              Ticketless access with TNG / Debit /
-              <br />
-              Credit card at RM 5 flat rate / entry
-            </>
+            <span className="whitespace-pre-line">
+              {t('details.parking.subtext')}
+            </span>
           }
         />
       </div>
 
       <p className="mt-12 animate-rise-blur text-center font-seasons text-3xl font-bold text-burgundy sm:mt-16 sm:text-4xl">
-        HOW TO GET THERE
+        {t('map.heading')}
       </p>
 
       <div className="relative mt-6 h-100 w-full max-w-sm animate-rise-blur overflow-hidden sm:mt-8 sm:h-125 sm:max-w-xl">
@@ -185,10 +191,10 @@ export function Invitation() {
         <div className="absolute top-3 left-3 flex max-w-60 items-start gap-1 rounded-md bg-white p-3 shadow-lg">
           <div className="flex-1">
             <p className="font-seasons text-sm font-bold text-black">
-              Astana at Bamboo Hills
+              {t('map.placeName')}
             </p>
             <p className="mt-1 font-seasons text-xs text-neutral-600">
-              Unit P13, Bamboo Hills, Off Lebuhraya DUKE, 51200 Kuala Lumpur
+              {t('map.placeAddress')}
             </p>
           </div>
           <div className="flex shrink-0 flex-col gap-2">
@@ -219,7 +225,7 @@ export function Invitation() {
           href="#"
           className="block rounded-full bg-burgundy px-12 py-3 text-center font-seasons text-3xl tracking-widest text-white transition-transform duration-300 group-hover:scale-[1.02] focus-visible:scale-[1.02] focus-visible:outline-none sm:py-4 sm:text-4xl"
         >
-          RSVP HERE
+          {t('rsvp.cta')}
         </a>
         <Bouquet
           src={bouquet7}
@@ -235,7 +241,7 @@ export function Invitation() {
         to="/"
         className="mt-12 inline-block animate-rise-blur font-seasons text-sm tracking-widest text-burgundy underline underline-offset-4 transition-transform duration-300 hover:scale-[1.02] focus-visible:scale-[1.02] focus-visible:outline-none sm:mt-16 sm:text-base"
       >
-        RETURN TO ENVELOPE
+        {t('nav.returnToEnvelope')}
       </Link>
     </main>
   );

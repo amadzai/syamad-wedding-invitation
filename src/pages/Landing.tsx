@@ -1,4 +1,5 @@
 import { useNavigate } from 'react-router-dom';
+import { useLocale } from '../locale/useLocale';
 import bouquet1 from '../assets/images/landing/bouquet-1.png';
 import bouquet2 from '../assets/images/landing/bouquet-2.png';
 import envelopeBg from '../assets/images/landing/envelope-background.png';
@@ -7,6 +8,7 @@ import stamp2 from '../assets/images/landing/stamp-2.png';
 
 export function Landing() {
   const navigate = useNavigate();
+  const { t } = useLocale();
 
   const open = () => navigate('/invitation');
 
@@ -24,7 +26,7 @@ export function Landing() {
           <FloralBottomRight />
         </span>
         <span className="animate-rise font-display text-lg font-medium tracking-[0.3em] text-black uppercase [animation-delay:1s] sm:text-2xl">
-          Click to open...
+          {t('landing.clickToOpen')}
         </span>
       </button>
     </main>
@@ -32,6 +34,7 @@ export function Landing() {
 }
 
 function Envelope() {
+  const { t } = useLocale();
   return (
     <div className="relative aspect-1938/1343 w-[min(72vw,460px)] animate-rise overflow-hidden shadow-2xl [animation-delay:0.2s] sm:w-[min(85vw,460px)]">
       <img
@@ -42,8 +45,8 @@ function Envelope() {
       />
       <Stamps />
       <p className="absolute inset-0 flex translate-y-4 -rotate-4 animate-fade-in flex-col items-center justify-center font-script text-2xl leading-tight text-[#f2f1eb] [animation-delay:0.6s] sm:translate-y-6 sm:text-4xl">
-        <span>The wedding of</span>
-        <span className="mt-1">Syafiqah &amp; Amad!</span>
+        <span>{t('landing.weddingOf')}</span>
+        <span className="mt-1">{t('landing.coupleNames')}</span>
       </p>
     </div>
   );

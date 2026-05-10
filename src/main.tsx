@@ -2,6 +2,8 @@ import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { RouterProvider } from 'react-router-dom';
 import { router } from './router';
+import { LocaleProvider } from './locale/LocaleProvider';
+import { LocaleToggle } from './components/LocaleToggle';
 import './styles/index.css';
 
 if ('scrollRestoration' in history) {
@@ -10,6 +12,9 @@ if ('scrollRestoration' in history) {
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <LocaleProvider>
+      <LocaleToggle />
+      <RouterProvider router={router} />
+    </LocaleProvider>
   </StrictMode>,
 );

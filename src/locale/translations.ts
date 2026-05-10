@@ -54,7 +54,7 @@ export const translations = {
     'details.date.title': 'TARIKH',
     'details.date.detail': '30 Ogos 2026',
     'details.time.title': 'MASA',
-    'details.time.detail': '12:00ptg - 4:00ptg',
+    'details.time.detail': '12:00pm - 4:00pm',
     'details.theme.title': 'TEMA',
     'details.theme.detail': 'Earthy Elegance',
     'details.dressCode.title': 'KOD PAKAIAN',

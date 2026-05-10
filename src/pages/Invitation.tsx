@@ -157,14 +157,14 @@ export function Invitation() {
         HOW TO GET THERE
       </p>
 
-      <div className="mt-6 h-100 w-full max-w-3xl overflow-hidden sm:mt-8 sm:h-125">
+      <div className="mt-6 h-100 w-full max-w-2xl overflow-hidden sm:mt-8 sm:h-125">
         <Map
           initialViewState={{
             longitude: 101.67490055966623,
             latitude: 3.1934055941883077,
-            zoom: 14,
+            zoom: 16,
           }}
-          mapStyle="https://tiles.openfreemap.org/styles/positron"
+          mapStyle="https://tiles.stadiamaps.com/styles/stamen_toner.json"
         >
           <Marker
             longitude={101.67490055966623}

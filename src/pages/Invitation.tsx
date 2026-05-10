@@ -10,6 +10,7 @@ import polaroid2 from '../assets/images/invitation/polaroid-2.png';
 import saveTheDate from '../assets/images/invitation/save-the-date.png';
 import envelopeOpen from '../assets/images/invitation/envelope-open.png';
 import bismillah from '../assets/images/invitation/bismillah.png';
+import whiteFlowers from '../assets/images/invitation/white-flowers.png';
 
 export function Invitation() {
   return (
@@ -107,6 +108,13 @@ export function Invitation() {
       <p className="mt-3 text-center font-seasons text-2xl tracking-[0.2em] text-black sm:mt-4 sm:text-3xl">
         30<sup>th</sup> AUGUST 2026
       </p>
+
+      <img
+        src={whiteFlowers}
+        alt=""
+        aria-hidden
+        className="mt-4 w-48 sm:mt-8 sm:w-60"
+      />
     </main>
   );
 }

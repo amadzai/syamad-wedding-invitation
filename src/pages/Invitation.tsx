@@ -12,6 +12,7 @@ import envelopeOpen from '../assets/images/invitation/envelope-open.png';
 import bismillah from '../assets/images/invitation/bismillah.png';
 import whiteFlowers from '../assets/images/invitation/white-flowers.png';
 import house from '../assets/images/invitation/house.png';
+import car from '../assets/images/invitation/car.png';
 
 export function Invitation() {
   return (
@@ -137,6 +138,17 @@ export function Invitation() {
         <Details title="TIME" detail="12:00pm - 4:00pm" />
         <Details title="THEME" detail="Earthy Elegance" />
         <Details title="DRESS CODE" detail="Traditional / Formal" />
+        <Details
+          title="PARKING AT ASTANA"
+          detail={<img src={car} alt="" className="w-48 sm:w-64" />}
+          subtext={
+            <>
+              Ticketless access with TNG / Debit /
+              <br />
+              Credit card at RM 5 flat rate / entry
+            </>
+          }
+        />
       </div>
     </main>
   );
@@ -156,9 +168,11 @@ function Bouquet({ src, className }: { src: string; className: string }) {
 function Details({
   title,
   detail,
+  subtext,
 }: {
   title: string;
   detail: React.ReactNode;
+  subtext?: React.ReactNode;
 }) {
   return (
     <div className="flex flex-col items-center">
@@ -166,9 +180,15 @@ function Details({
         {title}
       </p>
 
-      <p className="mt-4 text-center font-script text-2xl text-black sm:mt-6 sm:text-3xl">
+      <div className="mt-4 text-center font-script text-2xl text-black sm:mt-6 sm:text-3xl">
         {detail}
-      </p>
+      </div>
+
+      {subtext && (
+        <p className="mt-4 text-center font-seasons text-base text-black sm:mt-6 sm:text-xl">
+          {subtext}
+        </p>
+      )}
     </div>
   );
 }

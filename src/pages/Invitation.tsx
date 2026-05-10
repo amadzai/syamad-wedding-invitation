@@ -124,9 +124,7 @@ export function Invitation() {
         className="mt-10 w-70 sm:mt-12 sm:w-82"
       />
 
-      <p className="mt-6 text-center font-seasons text-3xl font-bold text-burgundy sm:mt-10 sm:text-4xl">
-        VENUE
-      </p>
+      <Details title="VENUE" detail="Astana, Bamboo Hills" />
     </main>
   );
 }
@@ -139,5 +137,19 @@ function Bouquet({ src, className }: { src: string; className: string }) {
       aria-hidden
       className={`pointer-events-none absolute ${className}`}
     />
+  );
+}
+
+function Details({ title, detail }: { title: string; detail: string }) {
+  return (
+    <>
+      <p className="mt-6 text-center font-seasons text-3xl font-bold text-burgundy sm:mt-10 sm:text-4xl">
+        {title}
+      </p>
+
+      <p className="mt-4 text-center font-script text-2xl text-black sm:mt-6 sm:text-3xl">
+        {detail}
+      </p>
+    </>
   );
 }

@@ -49,7 +49,7 @@ export const translations = {
     'invitation.coupleNames': 'SYAFIQAH & AMAD',
     'invitation.dateLong': '30 OGOS 2026',
 
-    'details.venue.title': 'LOKASI MAJILIS',
+    'details.venue.title': 'LOKASI MAJLIS',
     'details.venue.detail': 'Astana, Bamboo Hills',
     'details.date.title': 'TARIKH',
     'details.date.detail': '30 Ogos 2026',
@@ -63,7 +63,7 @@ export const translations = {
     'details.parking.subtext':
       'Akses tanpa tiket dengan kad TNG / Debit /\nKredit pada kadar tetap RM 5 / sehari',
 
-    'map.heading': 'CARA KE SANA',
+    'map.heading': 'PETA LOKASI',
     'map.placeName': 'Astana at Bamboo Hills',
     'map.placeAddress':
       'Unit P13, Bamboo Hills, Off Lebuhraya DUKE, 51200 Kuala Lumpur',

@@ -5,6 +5,8 @@ import bouquet3 from '../assets/images/invitation/bouquet-3.png';
 import bouquet4 from '../assets/images/invitation/bouquet-4.png';
 import bouquet5 from '../assets/images/invitation/bouquet-5.png';
 import bouquet6 from '../assets/images/invitation/bouquet-6.png';
+import bouquet7 from '../assets/images/invitation/bouquet-7.png';
+import bouquet8 from '../assets/images/invitation/bouquet-8.png';
 import polaroid1 from '../assets/images/invitation/polaroid-1.png';
 import polaroid2 from '../assets/images/invitation/polaroid-2.png';
 import saveTheDate from '../assets/images/invitation/save-the-date.png';
@@ -214,18 +216,18 @@ export function Invitation() {
           RSVP HERE
         </a>
         <Bouquet
-          src={bouquet6}
-          className="top-1/2 -left-2 w-24 -translate-y-1/2 sm:-left-8 sm:w-30"
+          src={bouquet7}
+          className="top-1/3 -left-3 w-26 -translate-y-1/2 sm:-left-8 sm:w-32"
         />
         <Bouquet
-          src={bouquet5}
-          className="top-1/2 -right-1 w-20 -translate-y-1/2 sm:-right-2 sm:w-22"
+          src={bouquet8}
+          className="top-1/2 -right-2 w-22 -translate-y-1/2 sm:-right-3 sm:w-26"
         />
       </div>
 
       <Link
         to="/"
-        className="mt-16 font-seasons text-sm tracking-widest text-burgundy underline underline-offset-4 sm:mt-24 sm:text-base"
+        className="mt-12 font-seasons text-sm tracking-widest text-burgundy underline underline-offset-4 sm:mt-16 sm:text-base"
       >
         RETURN TO ENVELOPE
       </Link>

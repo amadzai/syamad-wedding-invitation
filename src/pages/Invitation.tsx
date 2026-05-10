@@ -13,6 +13,8 @@ import bismillah from '../assets/images/invitation/bismillah.png';
 import whiteFlowers from '../assets/images/invitation/white-flowers.png';
 import house from '../assets/images/invitation/house.png';
 import car from '../assets/images/invitation/car.png';
+import { Map, Marker } from 'react-map-gl/maplibre';
+import 'maplibre-gl/dist/maplibre-gl.css';
 
 export function Invitation() {
   return (
@@ -149,6 +151,27 @@ export function Invitation() {
             </>
           }
         />
+      </div>
+
+      <p className="mt-12 text-center font-seasons text-3xl font-bold text-burgundy sm:mt-16 sm:text-4xl">
+        HOW TO GET THERE
+      </p>
+
+      <div className="mt-6 h-100 w-full max-w-3xl overflow-hidden sm:mt-8 sm:h-125">
+        <Map
+          initialViewState={{
+            longitude: 101.67490055966623,
+            latitude: 3.1934055941883077,
+            zoom: 14,
+          }}
+          mapStyle="https://tiles.openfreemap.org/styles/positron"
+        >
+          <Marker
+            longitude={101.67490055966623}
+            latitude={3.1934055941883077}
+            color="#3b0009"
+          />
+        </Map>
       </div>
     </main>
   );

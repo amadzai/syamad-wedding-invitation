@@ -157,7 +157,7 @@ export function Invitation() {
         HOW TO GET THERE
       </p>
 
-      <div className="mt-6 h-100 w-full max-w-2xl overflow-hidden sm:mt-8 sm:h-125">
+      <div className="relative mt-6 h-100 w-full max-w-xl overflow-hidden sm:mt-8 sm:h-125">
         <Map
           initialViewState={{
             longitude: 101.67490055966623,
@@ -172,6 +172,26 @@ export function Invitation() {
             color="#3b0009"
           />
         </Map>
+
+        <div className="absolute top-3 left-3 flex max-w-65 items-start gap-3 rounded-md bg-white p-3 shadow-lg">
+          <div className="flex-1">
+            <p className="font-seasons text-sm font-bold text-black">
+              Astana at Bamboo Hills
+            </p>
+            <p className="mt-1 font-seasons text-xs text-neutral-600">
+              Unit P13, Bamboo Hills, Off Lebuhraya DUKE, 51200 Kuala Lumpur
+            </p>
+          </div>
+          <a
+            href="https://www.google.com/maps/dir/?api=1&destination=Astana+at+Bamboo+Hills+Kuala+Lumpur"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Get directions"
+            className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-burgundy text-white hover:opacity-90"
+          >
+            →
+          </a>
+        </div>
       </div>
     </main>
   );

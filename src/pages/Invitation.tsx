@@ -15,6 +15,7 @@ import house from '../assets/images/invitation/house.png';
 import car from '../assets/images/invitation/car.png';
 import { Map, Marker } from 'react-map-gl/maplibre';
 import 'maplibre-gl/dist/maplibre-gl.css';
+import { Link } from 'react-router-dom';
 
 export function Invitation() {
   return (
@@ -204,6 +205,30 @@ export function Invitation() {
           </div>
         </div>
       </div>
+
+      <div className="relative mt-24 w-full max-w-md sm:mt-32">
+        <a
+          href="#"
+          className="block rounded-full bg-burgundy px-12 py-3 text-center font-seasons text-xl tracking-widest text-white sm:py-4 sm:text-4xl"
+        >
+          RSVP HERE
+        </a>
+        <Bouquet
+          src={bouquet6}
+          className="top-1/2 -left-2 w-24 -translate-y-1/2 sm:-left-8 sm:w-30"
+        />
+        <Bouquet
+          src={bouquet5}
+          className="top-1/2 -right-1 w-20 -translate-y-1/2 sm:-right-2 sm:w-22"
+        />
+      </div>
+
+      <Link
+        to="/"
+        className="mt-16 font-seasons text-sm tracking-widest text-burgundy underline underline-offset-4 sm:mt-24 sm:text-base"
+      >
+        RETURN TO ENVELOPE
+      </Link>
     </main>
   );
 }

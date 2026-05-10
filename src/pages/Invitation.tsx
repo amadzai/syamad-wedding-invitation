@@ -58,15 +58,15 @@ export function Invitation() {
           SYAFIQAH + AMAD
         </p>
 
-        <p className="pointer-events-none absolute top-[31%] left-[57%] -translate-x-1/2 -rotate-4 font-seasons text-sm font-medium tracking-[0.15em] whitespace-nowrap text-black sm:top-[30%] sm:text-2xl">
+        <p className="pointer-events-none absolute top-[31%] left-[57%] -translate-x-1/2 -rotate-4 font-seasons text-sm font-medium tracking-widest whitespace-nowrap text-black sm:top-[31%] sm:text-2xl">
           SAVE OUR DATE
         </p>
 
-        <p className="pointer-events-none absolute top-[40%] left-[57%] -translate-x-1/2 -rotate-4 font-seasons text-3xl tracking-widest whitespace-nowrap text-black sm:top-[42%] sm:text-5xl">
+        <p className="pointer-events-none absolute top-[37%] left-[57%] -translate-x-1/2 -rotate-4 font-seasons text-3xl tracking-widest whitespace-nowrap text-black sm:top-[38%] sm:text-5xl">
           30.08.26
         </p>
 
-        <p className="pointer-events-none absolute top-[52%] left-[57%] -translate-x-1/2 -rotate-4 font-script text-base whitespace-nowrap text-black sm:top-[55%] sm:text-2xl">
+        <p className="pointer-events-none absolute top-[47%] left-[57%] -translate-x-1/2 -rotate-4 font-pinyon text-base tracking-wider whitespace-nowrap text-black sm:top-[48%] sm:text-2xl">
           We&rsquo;re getting married!
         </p>
 
@@ -79,7 +79,7 @@ export function Invitation() {
 
         <Bouquet
           src={bouquet5}
-          className="top-[8%] -right-6 w-24 sm:-right-10 sm:w-37.5"
+          className="top-[22%] -right-9 w-24 sm:-right-16 sm:w-37.5"
         />
         <Bouquet
           src={bouquet6}

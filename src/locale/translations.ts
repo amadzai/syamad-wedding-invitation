@@ -45,7 +45,7 @@ export const translations = {
     'envelope.gettingMarried': 'Kami akan berkahwin!',
 
     'invitation.intro':
-      'Dengan limpah kurnia Allah, kami sukacita\nmenjemput tuan/puan ke majlis perkahwinan',
+      'Dengan limpah kurnia Allah, kami sukacita\nmenjemput tuan/puan ke walimatul urus',
     'invitation.coupleNames': 'SYAFIQAH & AMAD',
     'invitation.dateLong': '30 OGOS 2026',
 

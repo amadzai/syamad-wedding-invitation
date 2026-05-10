@@ -13,8 +13,8 @@ import saveTheDate from '../assets/images/invitation/save-the-date.png';
 import envelopeOpen from '../assets/images/invitation/envelope-open.png';
 import bismillah from '../assets/images/invitation/bismillah.png';
 import whiteFlowers from '../assets/images/invitation/white-flowers.png';
-import house from '../assets/images/invitation/house.png';
-import car from '../assets/images/invitation/car.png';
+import house from '../assets/images/invitation/astana.png';
+import car from '../assets/images/invitation/car-myvi.png';
 import { Map, Marker } from 'react-map-gl/maplibre';
 import 'maplibre-gl/dist/maplibre-gl.css';
 import { Link } from 'react-router-dom';
@@ -130,7 +130,7 @@ export function Invitation() {
         className="mt-10 w-70 sm:mt-12 sm:w-82"
       />
 
-      <div className="mt-8 flex flex-col gap-8 sm:mt-12 sm:gap-16">
+      <div className="mt-8 flex flex-col gap-8 sm:mt-10 sm:gap-16">
         <Details title="VENUE" detail="Astana, Bamboo Hills" />
         <Details
           title="DATE"
@@ -145,7 +145,7 @@ export function Invitation() {
         <Details title="DRESS CODE" detail="Traditional / Formal" />
         <Details
           title="PARKING AT ASTANA"
-          detail={<img src={car} alt="" className="w-48 sm:w-64" />}
+          detail={<img src={car} alt="" className="w-56 sm:w-72" />}
           subtext={
             <>
               Ticketless access with TNG / Debit /

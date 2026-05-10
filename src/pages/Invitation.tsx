@@ -193,7 +193,7 @@ export function Invitation() {
               <i className="fa-solid fa-location-dot text-sm" />
             </a>
             <a
-              href="https://www.waze.com/ul?ll=3.1934,101.6749&navigate=yes"
+              href="https://ul.waze.com/ul?place=ChIJ_SQ2M7pHzDERCNHqH7NWucI&ll=3.19337370%2C101.67490820&navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Open in Waze"

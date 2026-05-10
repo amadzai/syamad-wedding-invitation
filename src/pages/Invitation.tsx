@@ -84,15 +84,21 @@ export function Invitation() {
         />
         <Bouquet
           src={bouquet6}
-          className="bottom-0 -left-10 w-28 translate-y-1/4 sm:w-42"
+          className="-bottom-10 -left-10 w-28 translate-y-1/4 sm:w-48"
         />
       </div>
 
       <img
         src={bismillah}
         alt="Bismillah"
-        className="mt-20 w-78 sm:mt-32 sm:w-85"
+        className="mt-20 w-78 sm:mt-32 sm:w-94"
       />
+
+      <p className="text-md mt-4 max-w-md text-center font-script text-black sm:mt-8 sm:text-xl">
+        With the blessing of Allah we are delighted
+        <br />
+        to invite you to the wedding reception of
+      </p>
     </main>
   );
 }

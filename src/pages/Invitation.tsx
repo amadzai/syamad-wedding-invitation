@@ -214,26 +214,26 @@ export function Invitation() {
         </div>
       </div>
 
-      <div className="relative mt-24 w-full max-w-md animate-rise-blur sm:mt-32">
+      <div className="group relative mt-24 w-full max-w-md animate-rise-blur sm:mt-32">
         <a
           href="#"
-          className="block rounded-full bg-burgundy px-12 py-3 text-center font-seasons text-xl tracking-widest text-white sm:py-4 sm:text-4xl"
+          className="block rounded-full bg-burgundy px-12 py-3 text-center font-seasons text-3xl tracking-widest text-white transition-transform duration-300 group-hover:scale-[1.02] focus-visible:scale-[1.02] focus-visible:outline-none sm:py-4 sm:text-4xl"
         >
           RSVP HERE
         </a>
         <Bouquet
           src={bouquet7}
-          className="top-1/3 -left-3 w-26 -translate-y-1/2 sm:-left-8 sm:w-32"
+          className="top-1/3 -left-3 w-26 -translate-y-1/2 transition-transform duration-300 group-hover:scale-[1.02] sm:-left-8 sm:w-32"
         />
         <Bouquet
           src={bouquet8}
-          className="top-1/2 -right-2 w-22 -translate-y-1/2 sm:-right-3 sm:w-26"
+          className="top-1/2 -right-2 w-22 -translate-y-1/2 transition-transform duration-300 group-hover:scale-[1.02] sm:-right-4 sm:w-26"
         />
       </div>
 
       <Link
         to="/"
-        className="mt-12 animate-rise-blur font-seasons text-sm tracking-widest text-burgundy underline underline-offset-4 sm:mt-16 sm:text-base"
+        className="mt-12 inline-block animate-rise-blur font-seasons text-sm tracking-widest text-burgundy underline underline-offset-4 transition-transform duration-300 hover:scale-[1.02] focus-visible:scale-[1.02] focus-visible:outline-none sm:mt-16 sm:text-base"
       >
         RETURN TO ENVELOPE
       </Link>

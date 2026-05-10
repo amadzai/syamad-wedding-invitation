@@ -18,12 +18,45 @@ import car from '../assets/images/invitation/car-myvi.png';
 import { Map, Marker } from 'react-map-gl/maplibre';
 import 'maplibre-gl/dist/maplibre-gl.css';
 import { Link } from 'react-router-dom';
+import { useEffect, useRef, useState } from 'react';
 import { useLocale } from '../locale/useLocale';
 
 export function Invitation() {
   const { t } = useLocale();
+  const audioRef = useRef<HTMLAudioElement>(null);
+  const [muted, setMuted] = useState(
+    () => localStorage.getItem('muted') === 'true',
+  );
+
+  useEffect(() => {
+    const audio = audioRef.current;
+    if (!audio) return;
+    audio.muted = muted;
+    audio.play().catch(() => {});
+  }, [muted]);
+
+  const toggleMute = () => {
+    const next = !muted;
+    setMuted(next);
+    localStorage.setItem('muted', String(next));
+  };
+
   return (
     <main className="flex min-h-screen flex-col items-center bg-white px-6 pt-48 pb-12 sm:pt-56">
+      <audio ref={audioRef} src="/music.mp3" loop preload="auto" />
+
+      <button
+        type="button"
+        onClick={toggleMute}
+        aria-label={muted ? 'Unmute music' : 'Mute music'}
+        aria-pressed={muted}
+        className="fixed top-4 left-4 z-50 flex h-9 w-9 cursor-pointer items-center justify-center rounded-full border border-burgundy bg-white/90 text-burgundy backdrop-blur-sm transition-colors hover:bg-burgundy hover:text-white sm:top-6 sm:left-6 sm:h-10 sm:w-10"
+      >
+        <i
+          className={`fa-solid ${muted ? 'fa-volume-xmark' : 'fa-volume-high'} text-sm`}
+        />
+      </button>
+
       <div className="relative w-[min(72vw,460px)] sm:w-[min(85vw,460px)]">
         <img
           src={envelope}

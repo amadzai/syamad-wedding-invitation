@@ -11,6 +11,7 @@ import saveTheDate from '../assets/images/invitation/save-the-date.png';
 import envelopeOpen from '../assets/images/invitation/envelope-open.png';
 import bismillah from '../assets/images/invitation/bismillah.png';
 import whiteFlowers from '../assets/images/invitation/white-flowers.png';
+import house from '../assets/images/invitation/house.png';
 
 export function Invitation() {
   return (
@@ -114,6 +115,13 @@ export function Invitation() {
         alt=""
         aria-hidden
         className="mt-4 w-48 sm:mt-8 sm:w-60"
+      />
+
+      <img
+        src={house}
+        alt=""
+        aria-hidden
+        className="mt-10 w-70 sm:mt-12 sm:w-82"
       />
     </main>
   );

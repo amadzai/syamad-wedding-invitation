@@ -10,6 +10,9 @@ export const translations = {
 
     'invitation.intro':
       'Assalamualaikum and Greetings\nIn the name of Allah SWT,  \nthe Most Gracious, the Most Merciful',
+    'invitation.hostsLeft': 'ZAINURIN JAAFAR',
+    'invitation.hostsConnector': 'as well as',
+    'invitation.hostsRight': 'ZUKARNAIN ZAKARIA\n&\nYUSLINAWATI MOHD YUSOF',
     'invitation.coupleNames': 'SYAFIQAH & AMAD',
     'invitation.dateLong': '30th AUGUST 2026',
 
@@ -46,6 +49,9 @@ export const translations = {
 
     'invitation.intro':
       'Assalamualaikum dan Selamat Sejahtera\nDengan nama Allah SWT  yang \nMaha Pengasih lagi Maha Penyayang',
+    'invitation.hostsLeft': 'ZAINURIN JAAFAR',
+    'invitation.hostsConnector': 'serta',
+    'invitation.hostsRight': 'ZUKARNAIN ZAKARIA\n&\nYUSLINAWATI MOHD YUSOF',
     'invitation.coupleNames': 'SYAFIQAH & AMAD',
     'invitation.dateLong': '30 OGOS 2026',
 

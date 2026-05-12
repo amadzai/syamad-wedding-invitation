@@ -137,11 +137,23 @@ export function Invitation() {
         {t('invitation.intro')}
       </p>
 
-      <h1 className="mt-4 animate-rise-blur text-center font-seasons text-3xl tracking-[0.15em] text-black sm:mt-10 sm:text-4xl">
+      <p className="mt-4 animate-rise-blur text-center font-seasons text-2xl tracking-[0.15em] text-black sm:mt-10 sm:text-3xl">
+        {t('invitation.hostsLeft')}
+      </p>
+
+      <p className="mt-4 animate-rise-blur text-center font-script text-base text-black sm:mt-6 sm:text-xl">
+        {t('invitation.hostsConnector')}
+      </p>
+
+      <p className="mt-4 animate-rise-blur text-center font-seasons text-2xl leading-relaxed tracking-[0.15em] whitespace-pre-line text-black sm:mt-6 sm:text-3xl">
+        {t('invitation.hostsRight')}
+      </p>
+
+      <h1 className="mt-4 animate-rise-blur text-center font-seasons text-2xl tracking-[0.15em] text-black sm:mt-10 sm:text-3xl">
         {t('invitation.coupleNames')}
       </h1>
 
-      <p className="mt-3 animate-rise-blur text-center font-seasons text-2xl tracking-[0.2em] text-black sm:mt-4 sm:text-3xl">
+      <p className="mt-3 animate-rise-blur text-center font-seasons text-xl tracking-[0.2em] text-black sm:mt-4 sm:text-2xl">
         {t('invitation.dateLong')}
       </p>
 

@@ -14,6 +14,7 @@ export function Landing() {
 
   useEffect(() => {
     stopMusic();
+    import('./Invitation');
   }, []);
 
   const open = () => {

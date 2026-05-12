@@ -1,6 +1,5 @@
 import { createBrowserRouter } from 'react-router-dom';
 import { Landing } from './pages/Landing';
-import { Invitation } from './pages/Invitation';
 
 export const router = createBrowserRouter([
   {
@@ -9,6 +8,9 @@ export const router = createBrowserRouter([
   },
   {
     path: '/invitation',
-    element: <Invitation />,
+    lazy: async () => {
+      const { Invitation } = await import('./pages/Invitation');
+      return { Component: Invitation };
+    },
   },
 ]);

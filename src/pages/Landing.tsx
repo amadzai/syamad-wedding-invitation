@@ -1,5 +1,7 @@
+import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useLocale } from '../locale/useLocale';
+import { startMusic, stopMusic } from '../audio/music';
 import bouquet1 from '../assets/images/landing/bouquet-1.png';
 import bouquet2 from '../assets/images/landing/bouquet-2.png';
 import envelopeBg from '../assets/images/landing/envelope-background.png';
@@ -10,7 +12,14 @@ export function Landing() {
   const navigate = useNavigate();
   const { t } = useLocale();
 
-  const open = () => navigate('/invitation');
+  useEffect(() => {
+    stopMusic();
+  }, []);
+
+  const open = () => {
+    startMusic();
+    navigate('/invitation');
+  };
 
   return (
     <main className="flex min-h-screen items-center justify-center bg-white px-6 py-12">

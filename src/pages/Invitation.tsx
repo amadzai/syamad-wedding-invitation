@@ -18,33 +18,23 @@ import car from '../assets/images/invitation/car-myvi.png';
 import { Map, Marker } from 'react-map-gl/maplibre';
 import 'maplibre-gl/dist/maplibre-gl.css';
 import { Link } from 'react-router-dom';
-import { useEffect, useRef, useState } from 'react';
+import { useState } from 'react';
 import { useLocale } from '../locale/useLocale';
+import { isMuted, setMuted as persistMuted, startMusic } from '../audio/music';
 
 export function Invitation() {
   const { t } = useLocale();
-  const audioRef = useRef<HTMLAudioElement>(null);
-  const [muted, setMuted] = useState(
-    () => localStorage.getItem('muted') === 'true',
-  );
-
-  useEffect(() => {
-    const audio = audioRef.current;
-    if (!audio) return;
-    audio.muted = muted;
-    audio.play().catch(() => {});
-  }, [muted]);
+  const [muted, setMutedState] = useState(isMuted);
 
   const toggleMute = () => {
     const next = !muted;
-    setMuted(next);
-    localStorage.setItem('muted', String(next));
+    setMutedState(next);
+    persistMuted(next);
+    if (!next) startMusic();
   };
 
   return (
     <main className="flex min-h-screen flex-col items-center bg-white px-6 pt-48 pb-12 sm:pt-56">
-      <audio ref={audioRef} src="/music.mp3" loop preload="auto" />
-
       <button
         type="button"
         onClick={toggleMute}

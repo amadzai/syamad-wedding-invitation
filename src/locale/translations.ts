@@ -5,7 +5,7 @@ export const translations = {
     'landing.clickToOpen': 'Click to open...',
 
     'envelope.coupleSmall': 'SYAFIQAH + AMAD',
-    'envelope.saveOurDate': 'SAVE OUR DATE',
+    'envelope.saveOurDate': "YOU'RE INVITED",
     'envelope.gettingMarried': 'We’re getting married!',
 
     'invitation.intro':
@@ -41,7 +41,7 @@ export const translations = {
     'landing.clickToOpen': 'Klik untuk buka...',
 
     'envelope.coupleSmall': 'SYAFIQAH + AMAD',
-    'envelope.saveOurDate': 'SIMPAN TARIKH',
+    'envelope.saveOurDate': 'JEMPUT HADIR',
     'envelope.gettingMarried': 'Kami akan berkahwin!',
 
     'invitation.intro':

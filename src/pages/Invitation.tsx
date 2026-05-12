@@ -18,13 +18,26 @@ import car from '../assets/images/invitation/car-myvi.png';
 import { Map, Marker } from 'react-map-gl/maplibre';
 import 'maplibre-gl/dist/maplibre-gl.css';
 import { Link } from 'react-router-dom';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useLocale } from '../locale/useLocale';
 import { isMuted, setMuted as persistMuted, startMusic } from '../audio/music';
 
 export function Invitation() {
   const { t } = useLocale();
   const [muted, setMutedState] = useState(isMuted);
+
+  useEffect(() => {
+    if (muted) return;
+    startMusic();
+    const onInteract = () => startMusic();
+    const events = ['pointerdown', 'touchstart', 'wheel', 'keydown'] as const;
+    events.forEach((e) =>
+      document.addEventListener(e, onInteract, { once: true, passive: true }),
+    );
+    return () => {
+      events.forEach((e) => document.removeEventListener(e, onInteract));
+    };
+  }, [muted]);
 
   const toggleMute = () => {
     const next = !muted;

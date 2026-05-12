@@ -14,7 +14,7 @@ export const translations = {
     'invitation.hostsConnector': 'as well as',
     'invitation.hostsRight': 'ZUKARNAIN ZAKARIA\n&\nYUSLINAWATI MOHD YUSOF',
     'invitation.outro':
-      'With joyful hearts and deepest gratitude,\nwe are delighted to invite you to the\nwedding reception of our beloved child',
+      'With joyful hearts and deepest gratitude,\nWe are delighted to invite you to the\nWedding reception of our beloved children',
     'invitation.coupleNames': 'SYAFIQAH & AMAD',
     'invitation.dateLong': '30th AUGUST 2026',
 
@@ -55,7 +55,7 @@ export const translations = {
     'invitation.hostsConnector': 'serta',
     'invitation.hostsRight': 'ZUKARNAIN ZAKARIA\n&\nYUSLINAWATI MOHD YUSOF',
     'invitation.outro':
-      'Dengan penuh rasa kesyukuran,\nkami ingin menjemput tuan/puan ke\nmajlis perkahwinan anakanda kami',
+      'Dengan penuh rasa kesyukuran,\nKami ingin menjemput tuan/puan ke\nWalimatul urus anakanda kami',
     'invitation.coupleNames': 'SYAFIQAH & AMAD',
     'invitation.dateLong': '30 OGOS 2026',
 

@@ -130,6 +130,8 @@ export function Invitation() {
       <img
         src={bismillah}
         alt="Bismillah"
+        loading="lazy"
+        decoding="async"
         className="mt-20 w-78 animate-rise-blur sm:mt-32 sm:w-94"
       />
 
@@ -165,6 +167,8 @@ export function Invitation() {
         src={whiteFlowers}
         alt=""
         aria-hidden
+        loading="lazy"
+        decoding="async"
         className="mt-4 w-48 animate-rise-blur sm:mt-8 sm:w-60"
       />
 
@@ -172,10 +176,12 @@ export function Invitation() {
         src={house}
         alt=""
         aria-hidden
+        loading="lazy"
+        decoding="async"
         className="mt-10 w-70 animate-rise-blur sm:mt-12 sm:w-82"
       />
 
-      <div className="mt-8 flex animate-rise-blur flex-col gap-8 sm:mt-10 sm:gap-16">
+      <div className="mt-8 flex animate-rise-blur flex-col gap-8 [contain-intrinsic-size:auto_1200px] [content-visibility:auto] sm:mt-10 sm:gap-16">
         <Details
           title={t('details.venue.title')}
           detail={t('details.venue.detail')}
@@ -198,7 +204,15 @@ export function Invitation() {
         />
         <Details
           title={t('details.parking.title')}
-          detail={<img src={car} alt="" className="w-48 sm:w-64" />}
+          detail={
+            <img
+              src={car}
+              alt=""
+              loading="lazy"
+              decoding="async"
+              className="w-48 sm:w-64"
+            />
+          }
           subtext={
             <span className="whitespace-pre-line">
               {t('details.parking.subtext')}
@@ -211,7 +225,7 @@ export function Invitation() {
         {t('map.heading')}
       </p>
 
-      <div className="relative mt-6 h-100 w-full max-w-sm animate-rise-blur overflow-hidden sm:mt-8 sm:h-125 sm:max-w-xl">
+      <div className="relative mt-6 h-100 w-full max-w-sm animate-rise-blur overflow-hidden [contain-intrinsic-size:auto_500px] [content-visibility:auto] sm:mt-8 sm:h-125 sm:max-w-xl">
         <Map
           initialViewState={{
             longitude: 101.67490055966623,
@@ -259,7 +273,7 @@ export function Invitation() {
         </div>
       </div>
 
-      <div className="group relative mt-24 w-full max-w-md animate-rise-blur sm:mt-32">
+      <div className="group relative mt-24 w-full max-w-md animate-rise-blur [contain-intrinsic-size:auto_200px] [content-visibility:auto] sm:mt-32">
         <a
           href="https://forms.gle/HzzfPAca1iYwVuGd6"
           target="_blank"
@@ -294,6 +308,8 @@ function Bouquet({ src, className }: { src: string; className: string }) {
       src={src}
       alt=""
       aria-hidden
+      loading="lazy"
+      decoding="async"
       className={`pointer-events-none absolute ${className}`}
     />
   );

@@ -149,6 +149,10 @@ export function Invitation() {
         {t('invitation.hostsRight')}
       </p>
 
+      <p className="mt-6 max-w-2xl animate-rise-blur text-center font-script text-base leading-relaxed whitespace-pre-line text-black sm:mt-10 sm:text-xl">
+        {t('invitation.outro')}
+      </p>
+
       <h1 className="mt-4 animate-rise-blur text-center font-seasons text-2xl tracking-[0.15em] text-black sm:mt-10 sm:text-3xl">
         {t('invitation.coupleNames')}
       </h1>

@@ -133,7 +133,7 @@ export function Invitation() {
         className="mt-20 w-78 animate-rise-blur sm:mt-32 sm:w-94"
       />
 
-      <p className="text-md mt-4 max-w-md animate-rise-blur text-center font-script whitespace-pre-line text-black sm:mt-8 sm:text-xl">
+      <p className="mt-4 max-w-2xl animate-rise-blur text-center font-script text-base leading-relaxed whitespace-pre-line text-black sm:mt-8 sm:text-xl">
         {t('invitation.intro')}
       </p>
 

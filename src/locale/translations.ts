@@ -9,7 +9,7 @@ export const translations = {
     'envelope.gettingMarried': 'We’re getting married!',
 
     'invitation.intro':
-      'With the blessing of Allah we are delighted\nto invite you to the wedding reception of',
+      'Assalamualaikum and Greetings\nIn the name of Allah SWT,  \nthe Most Gracious, the Most Merciful',
     'invitation.coupleNames': 'SYAFIQAH & AMAD',
     'invitation.dateLong': '30th AUGUST 2026',
 
@@ -45,7 +45,7 @@ export const translations = {
     'envelope.gettingMarried': 'Kami akan berkahwin!',
 
     'invitation.intro':
-      'Dengan limpah kurnia Allah, kami sukacita\nmenjemput tuan/puan ke walimatul urus',
+      'Assalamualaikum dan Selamat Sejahtera\nDengan nama Allah SWT  yang \nMaha Pengasih lagi Maha Penyayang',
     'invitation.coupleNames': 'SYAFIQAH & AMAD',
     'invitation.dateLong': '30 OGOS 2026',
 

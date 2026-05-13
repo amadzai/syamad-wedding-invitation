@@ -10,9 +10,9 @@ export const translations = {
 
     'invitation.intro':
       'Assalamualaikum and Greetings\nIn the name of Allah SWT,  \nthe Most Gracious, the Most Merciful',
-    'invitation.hostsLeft': 'ZAINURIN JAAFAR',
+    'invitation.hostsLeft': 'ZUKARNAIN ZAKARIA\n&\nYUSLINAWATI MOHD YUSOF',
     'invitation.hostsConnector': 'as well as',
-    'invitation.hostsRight': 'ZUKARNAIN ZAKARIA\n&\nYUSLINAWATI MOHD YUSOF',
+    'invitation.hostsRight': 'ZAINURIN JAAFAR',
     'invitation.outro':
       'With joyful hearts and deepest gratitude,\nWe are delighted to invite you to the\nWedding reception of our beloved children',
     'invitation.coupleNames': 'SYAFIQAH & AMAD',
@@ -51,9 +51,9 @@ export const translations = {
 
     'invitation.intro':
       'Assalamualaikum dan Selamat Sejahtera\nDengan nama Allah SWT  yang \nMaha Pengasih lagi Maha Penyayang',
-    'invitation.hostsLeft': 'ZAINURIN JAAFAR',
+    'invitation.hostsLeft': 'ZUKARNAIN ZAKARIA\n&\nYUSLINAWATI MOHD YUSOF',
     'invitation.hostsConnector': 'serta',
-    'invitation.hostsRight': 'ZUKARNAIN ZAKARIA\n&\nYUSLINAWATI MOHD YUSOF',
+    'invitation.hostsRight': 'ZAINURIN JAAFAR',
     'invitation.outro':
       'Dengan penuh rasa kesyukuran,\nKami ingin menjemput tuan/puan ke\nWalimatul urus anakanda kami',
     'invitation.coupleNames': 'SYAFIQAH & AMAD',

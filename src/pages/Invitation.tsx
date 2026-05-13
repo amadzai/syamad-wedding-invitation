@@ -152,7 +152,7 @@ export function Invitation() {
         {t('invitation.intro')}
       </p>
 
-      <p className="mt-4 animate-rise-blur text-center font-seasons text-2xl leading-relaxed tracking-[0.15em] whitespace-pre-line text-black sm:mt-10 sm:text-3xl">
+      <p className="mt-4 animate-rise-blur text-center font-seasons text-xl leading-relaxed tracking-[0.15em] whitespace-pre-line text-black sm:mt-10 sm:text-2xl">
         {t('invitation.hostsLeft')}
       </p>
 
@@ -160,7 +160,7 @@ export function Invitation() {
         {t('invitation.hostsConnector')}
       </p>
 
-      <p className="mt-4 animate-rise-blur text-center font-seasons text-2xl leading-relaxed tracking-[0.15em] whitespace-pre-line text-black sm:mt-6 sm:text-3xl">
+      <p className="mt-4 animate-rise-blur text-center font-seasons text-xl leading-relaxed tracking-[0.15em] whitespace-pre-line text-black sm:mt-6 sm:text-2xl">
         {t('invitation.hostsRight')}
       </p>
 

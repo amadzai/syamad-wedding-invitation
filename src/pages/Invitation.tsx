@@ -286,7 +286,7 @@ export function Invitation() {
         </div>
       </div>
 
-      <div className="group relative mt-24 w-full max-w-md animate-rise-blur [contain-intrinsic-size:auto_200px] [content-visibility:auto] sm:mt-32">
+      <div className="group relative mt-24 w-full max-w-md animate-rise-blur sm:mt-32">
         <a
           href="https://forms.gle/HzzfPAca1iYwVuGd6"
           target="_blank"

@@ -291,7 +291,7 @@ export function Invitation() {
           href="https://forms.gle/HzzfPAca1iYwVuGd6"
           target="_blank"
           rel="noopener noreferrer"
-          className="block rounded-full bg-burgundy px-12 py-3 text-center font-seasons text-3xl tracking-widest text-white transition-transform duration-300 group-hover:scale-[1.02] focus-visible:scale-[1.02] focus-visible:outline-none max-[380px]:px-8 max-[380px]:text-xl sm:py-4 sm:text-4xl"
+          className="block rounded-full bg-burgundy px-12 py-3 text-center font-seasons text-2xl tracking-widest text-white transition-transform duration-300 group-hover:scale-[1.02] focus-visible:scale-[1.02] focus-visible:outline-none max-[380px]:px-8 max-[380px]:text-lg sm:py-4 sm:text-4xl"
         >
           {t('rsvp.cta')}
         </a>
